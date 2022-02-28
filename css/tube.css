@@ -355,9 +355,9 @@ input[type="text" i] {
 .chanel_menu{
     display: none;
     position: absolute;
-    width: 240px;
+    width: 360px;
     border: 1px solid #606060;
-    right: -230px;
+    left: 20px;
     top: -35px;
     z-index: 2;
     /* padding: 0 0 0 24px; */
