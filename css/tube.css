@@ -19,7 +19,7 @@ button{
     align-items: center;
     padding-top: 3px;
     height: 56px;
-    position: fixed;
+    position: fixed; 
     width: 100%;
     z-index: 1;
     background: white;
@@ -114,12 +114,13 @@ input[type="text" i] {
 }
 /* _____________________HEAD_HREF___________________ */
 .head_href{
+    margin-right: 8px;
     display: flex;
     position: fixed;
-    margin-left: 240px;
+    margin-left: 252px;
     top: 58px;
     flex-wrap: nowrap;
-    width: calc(100% - 240px);
+    width: calc(100% - 260px);
     height: 56px;
     align-items: center;
     border-top: 1px solid #e5e5e5;
@@ -197,7 +198,7 @@ input[type="text" i] {
     background: white;
 }
 .aside::-webkit-scrollbar-thumb{
-    border-radius: 3px;
+    border-radius: 5px;
     background-color: transparent;    
 }
 .aside__menu{
@@ -213,8 +214,7 @@ input[type="text" i] {
     color: black;
     font-size: 14px;
     text-decoration: none;
-    
-    width: 200px;
+    width: 236px;
     height: 42px;  
     padding: 0 0 0 24px; 
     box-sizing: border-box; 
@@ -244,9 +244,9 @@ input[type="text" i] {
 
 .wrap{
     position: fixed;
-    left: 247px;
+    left: 252px;
     background: #f9f9f9;
-    width: calc(100% - 247px);
+    width: calc(100% - 252px);
     height: 100%;
     overflow-y: scroll; 
 }
@@ -336,7 +336,7 @@ input[type="text" i] {
     
 }
 .alt_menu{
-    display: flex;
+    /* display: flex; */
     position: absolute;
     bottom: 72px;
     right: 10px;
