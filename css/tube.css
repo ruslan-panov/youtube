@@ -20,7 +20,7 @@ button{
     padding-top: 3px;
     height: 56px;
     position: fixed; 
-    width: 100%;
+    width: calc(100% - 8px);
     z-index: 1;
     background: white;
     opacity: 0.99;
@@ -180,7 +180,7 @@ input[type="text" i] {
 
 .aside{
     position: fixed;
-    top: 56px;
+    top: 59px;
     height: 100%;
     overflow-y: scroll;    
 }
@@ -336,16 +336,13 @@ input[type="text" i] {
     
 }
 .alt_menu{
-    /* display: flex; */
     position: absolute;
     bottom: 72px;
     right: 10px;
     display: block;
 
 }
-/* .user_chanel button.alt_menu:active{
-    background-color: red;
-} */
+
 .user_chanel button.alt_menu:active  .chanel_menu{
     display: block;
 }
@@ -360,36 +357,42 @@ input[type="text" i] {
     left: 20px;
     top: -35px;
     z-index: 2;
-    /* padding: 0 0 0 24px; */
-    /* background: #f2f1f1; */
     background: white;
     box-sizing: border-box;
     box-shadow: 1px 1px 2px black;
 
 }
-.chanel_menu ul li{
-    list-style-type: none;
-    height: 23px;
+.chanel_menu ul.aside__menu{
+    width: 100%;
+    margin: 6px 0;
+    border-bottom: 1px solid;
+    box-sizing: border-box;
+}
+.chanel_menu ul.aside__menu:last-child{
+    border-bottom: none;
+   
+}
+
+.chanel_menu ul.aside__menu li a{
+    width: 358px;
+    
     
 }
-.chanel_menu ul{
-    margin: 0px;
-    padding: 3px;
+.chanel_menu ul.aside__menu li:last-child a{
+    border-bottom: none;
 }
-.chanel_menu ul li a{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 0px;
-    
+.chanel_menu ul.aside__menu li a:hover{
+    background: #e5e5e5;
 }
-.chanel_menu li a img{
-    display: block;
-    margin-right: 25px;
+.chanel_menu ul.aside__menu:first-child li:nth-child(3){
+    padding-bottom: 6px;
 }
 .layer{
     position: relative;
     width: inherit;
     height: inherit;
 }
+.video:nth-child(4n) .chanel_menu{
+    left: -352px;
+    top: -35px;
+ }
