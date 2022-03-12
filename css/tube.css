@@ -262,33 +262,68 @@ input[type="text" i] {
   position: absolute;
   background: white;
   width: 400px;
-  height: 328px;
   left: -25px;
   top: -25px;
   z-index: 1;
 }
 
+.video_content img {
+  display: block;
+  margin-bottom: 10px;
+}
+
 .elastic {
-  position: absolute;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 46%;
-  bottom: 10px;
-  left: 10px;
+  min-width: 184px;
+  height: 46px;
   cursor: pointer;
   background-color: #f2f1f1;
 }
-.elastic2 {
-  position: absolute;
+
+.elastic img {
+  align-self: center;
+  margin: 0;
+}
+.elastic-wrap {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 46%;
-  bottom: 10px;
-  right: 10px;
-  cursor: pointer;
-  background-color: #f2f1f1;
+  justify-content: space-between;
+}
+
+.video-info {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.video-info-wrap {
+  padding: 0 10px 10px;
+}
+
+.video-info__channel-pic img {
+  width: 28px;
+  border-radius: 50%;
+  display: block;
+}
+
+.video-info__description {
+  flex-grow: 1;
+  padding-left: 12px;
+}
+
+.video-info__description p {
+  margin: 8px 0;
+}
+
+.video-info__description p:first-child {
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.video-info__description p:nth-child(n + 2) {
+  font-size: 14px;
+  line-height: 0.7;
 }
 
 .video:hover .video_content {
@@ -300,11 +335,16 @@ input[type="text" i] {
   right: 10px;
   display: block;
 }
-.video_content button.alt_menu:active .chanel_menu {
+
+button.video-info__alt_menu {
+  position: relative;
+}
+
+.video_content button.video-info__alt_menu:active .chanel_menu {
   display: block;
 }
 
-.user_chanel button.alt_menu:active .chanel_menu {
+.user_chanel button.video-info__alt_menu:active .chanel_menu {
   display: block;
 }
 .chanel_menu:hover {
