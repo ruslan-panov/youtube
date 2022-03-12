@@ -1,0 +1,23 @@
+@media (max-width: 1312px) {
+  .aside {
+    display: none;
+  }
+  .aside-tablet {
+    display: block;
+  }
+  .head_href {
+    margin-left: 72px;
+    width: calc(100% - 72px);
+  }
+  .head_href ul {
+    padding-left: 50px;
+  }
+  .left-phade {
+    width: 50px;
+  }
+}
+/* @media (min-width: 1312px) {
+  .aside-tablet {
+    display: none;
+  }
+} */

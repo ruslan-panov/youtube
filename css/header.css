@@ -1,0 +1,144 @@
+.logo_search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3px;
+  height: 56px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background: white;
+  opacity: 0.99;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  width: 169px;
+  height: inherit;
+  padding-left: 23px;
+}
+.logo > img {
+  padding-left: 25px;
+}
+.icon-btn {
+  cursor: pointer;
+}
+.icon-btn > img {
+  display: block;
+}
+.input {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  margin: 0 50px;
+}
+input[type="text" i] {
+  padding: 1px 15px;
+  color: #9e9e9e;
+  font-size: 18px;
+  width: 572px;
+  height: 40px;
+  outline: none;
+  border: none;
+}
+.form {
+  position: relative;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.tia {
+  position: absolute;
+  right: 10px;
+  top: 14px;
+}
+.search_icon {
+  display: flex;
+  border: 1px solid #ccc;
+  width: 64px;
+  height: 44px;
+  background: #f8f8f8;
+  justify-content: center;
+  align-self: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.microfon {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background: #f9f9f9;
+  border-radius: 100%;
+  padding: 11px;
+  margin-left: 3px;
+}
+.right_menu {
+  display: flex;
+  margin-right: 10px;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.right_menu .icon img:last-child {
+  border-radius: 100%;
+}
+
+.head_href {
+  margin-right: 8px;
+  display: flex;
+  position: fixed;
+  margin-left: 252px;
+  top: 58px;
+  flex-wrap: nowrap;
+  width: calc(100% - 252px);
+  height: 56px;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  overflow-y: hidden;
+  z-index: 1;
+  background: white;
+  opacity: 0.96;
+  overflow-x: hidden;
+}
+.left-phade {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  height: inherit;
+  width: 120px;
+  background: linear-gradient(to left, transparent, white 30px);
+}
+.right-phade {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  height: inherit;
+  width: 120px;
+  background: linear-gradient(to right, transparent, white 30px);
+}
+
+.head_href ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 100px;
+}
+.head_href ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 5px 15px;
+  background: rgba(242, 242, 242, 1);
+  border-radius: 20px;
+  margin: 0 10px;
+  color: black;
+  border: 1px solid rgba(229, 229, 229, 1);
+  white-space: nowrap;
+}
