@@ -95,10 +95,8 @@ input[type="text" i] {
   margin-right: 8px;
   display: flex;
   position: fixed;
-  margin-left: 252px;
   top: 58px;
   flex-wrap: nowrap;
-  width: calc(100% - 252px);
   height: 56px;
   align-items: center;
   border-top: 1px solid #e5e5e5;
@@ -108,15 +106,28 @@ input[type="text" i] {
   background: white;
   opacity: 0.96;
   overflow-x: hidden;
+  margin-left: 72px;
+  width: calc(100% - 72px);
 }
+
+body.aside-menu-open .head_href {
+  margin-left: 252px;
+  width: calc(100% - 252px);
+}
+
 .left-phade {
   position: absolute;
   top: 0;
   left: 0px;
   height: inherit;
-  width: 120px;
+  width: 50px;
   background: linear-gradient(to left, transparent, white 30px);
 }
+
+body.aside-menu-open .left-phade {
+  width: 120px;
+}
+
 .right-phade {
   position: absolute;
   top: 0;
@@ -129,8 +140,13 @@ input[type="text" i] {
 .head_href ul {
   display: flex;
   list-style-type: none;
+  padding-left: 50px;
+}
+
+body.aside-menu-open .head_href ul {
   padding-left: 100px;
 }
+
 .head_href ul li a {
   display: block;
   text-decoration: none;

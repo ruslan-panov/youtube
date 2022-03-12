@@ -1,9 +1,15 @@
 .aside {
+  display: none;
   position: fixed;
   top: 59px;
   height: 100%;
   overflow-y: scroll;
 }
+
+body.aside-menu-open .aside {
+  display: block;
+}
+
 .aside:hover::-webkit-scrollbar-thumb {
   overflow-y: scroll;
   background-color: #606060;
@@ -59,10 +65,14 @@
   width: 28px;
   height: 28px;
 }
-.aside-tablet {
+.aside-compact {
   width: 72px;
   background-color: aqua;
   height: 500px;
   position: fixed;
+  display: block;
+}
+
+body.aside-menu-open .aside-compact {
   display: none;
 }

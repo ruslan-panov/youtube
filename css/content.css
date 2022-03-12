@@ -1,8 +1,12 @@
 .wrap {
-  margin-left: 252px;
+  margin-left: 72px;
   background: #f9f9f9;
-  width: calc(100% - 252px);
+  width: calc(100% - 72px);
   height: 100%;
+}
+body.aside-menu-open .wrap {
+  margin-left: 252px;
+  width: calc(100% - 252px);
 }
 
 .contain {
@@ -14,7 +18,7 @@
 .video {
   position: relative;
   height: 180px;
-  flex-basis: 23%;
+  width: 330px;
   background: radial-gradient(white, black);
   border: 1px solid white;
   margin: 5px 6px;

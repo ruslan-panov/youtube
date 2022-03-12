@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body class="aside-menu-open">
     <header>
         <div class="logo_search">
             <div class="logo">
-                <button class="icon-btn">
+                <button class="icon-btn" onclick="onMainMenuClick()">
                     <img src="images/alt.menu.svg" alt="" width="24px" />
                 </button>
                 <img src="images/tube_icon.svg" alt="" width="90px" />
@@ -69,13 +69,12 @@
                 <li><a href="#">Джемы</a></li>
                 <li><a href="#">Сейчас в эфире</a></li>
                 <li><a href="#">Видеоигры</a></li>
-                <li><a href="#">Скетч-шоу</a></li>
+
                 <li><a href="#">Туристические направления</a></li>
                 <li><a href="#">РЭП</a></li>
                 <li><a href="#">Последние опубликованные видео</a></li>
-                <li><a href="#">Туристические направления</a></li>
                 <li><a href="#">Просмотренно</a></li>
-                <li><a href="#">Туристические направления</a></li>
+
                 <li><a href="#">Для Вас</a></li>
             </ul>
         </div>
@@ -166,7 +165,7 @@
             </ul>
         </nav>
     </aside>
-    <aside class="aside-tablet"></aside>
+    <aside class="aside-compact"></aside>
 
     <div class="wrap">
         <div class="contain">
@@ -489,6 +488,19 @@
     </div>
 
     <footer></footer>
+
+    <script>
+        function onMainMenuClick() {
+            const isMenuOpen = document.querySelector('body').classList.contains('aside-menu-open');
+
+            if (isMenuOpen) {
+                document.querySelector('body').classList.remove('aside-menu-open');
+            } else {
+                document.querySelector('body').classList.add('aside-menu-open');
+            }
+
+        }
+    </script>
 </body>
 
 </html>
