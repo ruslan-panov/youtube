@@ -67,12 +67,33 @@ body.aside-menu-open .aside {
 }
 .aside-compact {
   width: 72px;
-  background-color: aqua;
   height: 500px;
   position: fixed;
   display: block;
+  margin-top: 59px;
 }
 
 body.aside-menu-open .aside-compact {
   display: none;
+}
+
+/* ______________________aside-compact________________ */
+
+.aside-compact__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 74px;
+  /* box-sizing: border-box; */
+  cursor: pointer;
+}
+.aside-compact__nav img {
+  display: block;
+}
+
+.aside-compact__nav span {
+  font-size: 10px;
+  padding-top: 5px;
 }
